@@ -5,7 +5,7 @@ import BackgroundImage from '../../assets/profile.jpg'; // Ensure the path is co
 const faqs = [
   {
     question: "What is the delivery process?",
-    answer: "The delivery process includes the following steps: After you place an order, you choose a restaurant, and the request is sent to a delivery partner. The delivery partner receives the request and can either accept or decline it. Once accepted, the order appears in their 'Current Orders' section, where they can view the order ID and delivery address. The address can be manually copied, and the delivery partner can use the map in the 'Notification' section to search for the user's location and plan the route."
+    answer: "The delivery process includes the following steps: After you place an order, you choose a EcoArtisans Hub, and the request is sent to a delivery partner. The delivery partner receives the request and can either accept or decline it. Once accepted, the order appears in their 'Current Orders' section, where they can view the order ID and delivery address. The address can be manually copied, and the delivery partner can use the map in the 'Notification' section to search for the user's location and plan the route."
   },
   {
     question: "How do I reset my password?",

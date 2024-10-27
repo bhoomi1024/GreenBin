@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import chef from '../../assets/chef image.webp';
+import chef from '../../assets/carft.avif';
 import ResDashboardCard from '../../components/AfterLoginRestaurantCompo/ResDashboardCard';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -102,8 +102,8 @@ useEffect(() => {
             />
           ))}
         </div>
-        <div className='size-72 ml-20 -mt-16 bg-red-300'>
-          <img src={chef} className='' alt='Chef' />
+        <div className='size-72 ml-20 mt-39 mr-11'>
+        <img src={chef} className="rounded-full shadow-lg transition duration-300" alt="Chef" />
         </div>
       </div>
     </div>

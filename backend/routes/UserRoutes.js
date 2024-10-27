@@ -83,19 +83,19 @@ router.post('/UserForgotPasswordDialog', async (req, res) => {
     const mailOptions = {
       from: 'vermabhoomi10248932@gmail.com',
       to: email,
-      subject: 'Reset Your FoodieBuddy Password',
+      subject: 'Reset Your GreenBin Password',
       text: `Hi,
 
-We received a request to reset your FoodieBuddy password. If you made this request, please click the link below to set a new password.
+We received a request to reset your GreenBin password. If you made this request, please click the link below to set a new password.
 
 If you didn't request a password reset, please ignore this email or let us know.
 
 http://localhost:5173/UserResetPassword/${token}
 
-Thank you for being a part of the FoodieBuddy community!
+Thank you for being a part of the GreenBin community!
 
 Best regards,
-The FoodieBuddy Team`
+The GreenBin Team`
     };
 
     transporter.sendMail(mailOptions, (error, info) => {

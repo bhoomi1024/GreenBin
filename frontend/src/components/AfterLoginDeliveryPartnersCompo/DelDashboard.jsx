@@ -67,13 +67,13 @@ const CurrentOrder = ({ orders, getOrders }) => {
                 {/* //Restaurant details */}
                 <div className='flex flex-col m-4 p-2 gap-y-3'>
                   <div>
-                    Restaurant's Name : {order?.restaurant?.restaurantName}
+                  EcoArtisans Hub : {order?.restaurant?.restaurantName}
                   </div>
                   <div>
-                    Restaurant's Phone : {order?.restaurant?.phone}
+                  EcoArtisans Hub : {order?.restaurant?.phone}
                   </div>
                   <div className=' flex  items-center'>
-                    <p>Restaurant's Address : </p>
+                    <p>EcoArtisans Hub : </p>
                     {<p className=" p-3 text-wrap ">
                       {order?.restaurant?.address}, {order?.restaurant?.city}, {order?.restaurant?.stateName},{order?.restaurant?.countryName}
                     </p>}
@@ -151,13 +151,13 @@ const PastOrder = ({ orders }) => {
                 {/* //Restaurant details */}
                 <div className='flex flex-col m-4 p-2 gap-y-3'>
                   <div>
-                    Restaurant's Name : {order?.restaurant?.restaurantName}
+                  EcoArtisans Hub: {order?.restaurant?.restaurantName}
                   </div>
                   <div>
-                    Restaurant's Phone : {order?.restaurant?.phone}
+                  EcoArtisans Hub: {order?.restaurant?.phone}
                   </div>
                   <div className=' flex  items-center'>
-                    <p>Restaurant's Address : </p>
+                    <p>EcoArtisans Hub: </p>
                     {<p className=" p-3 text-wrap ">
                       {order?.restaurant?.address}, {order?.restaurant?.city}, {order?.restaurant?.stateName},{order?.restaurant?.countryName}
                     </p>}

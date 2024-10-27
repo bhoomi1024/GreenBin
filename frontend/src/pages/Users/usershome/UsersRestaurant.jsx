@@ -169,7 +169,7 @@ const UsersRestaurant = () => {
         <UsersRestaurantDetails restaurant={selectedRestaurant} onClose={closeDetail} />
       ) : (
         <div className="px-5 mb-10">
-          <h2 className="text-2xl font-bold mb-5">All Restaurants</h2>
+          <h2 className="text-2xl font-bold mb-5">EcoArtisans Hub for you</h2>
           {filteredRestaurants.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredRestaurants.map((restaurant) => (
@@ -182,7 +182,7 @@ const UsersRestaurant = () => {
               ))}
             </div>
           ) : (
-            <p>No restaurants available.</p>
+            <p>No Product available.</p>
           )}
         </div>
       )}

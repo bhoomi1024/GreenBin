@@ -89,14 +89,7 @@ const DelForgotPasswordDialog  = () => {
       </div>
       <div className="flex-1 flex flex-col items-center justify-center mt-16 lg:flex-row lg:justify-center">
         <div className="w-full max-w-md p-8 bg-white shadow-md rounded-md m-4 lg:m-0 lg:ml-16 mt-4">
-          <h1 className="font-poppins md:text-3xl font-extrabold tracking-wide flex">
-            <span className="text-yellow-400 flex justify-center items-center">
-              <span>fo</span>
-              <SiGreasyfork className="rotate-90 mt-1 mr-[1px]" size={20} />
-              <span>die</span>
-            </span>
-            <span>Buddy</span>
-          </h1>
+          
           <nav className="flex gap-x-7 items-center">
             <ul className="hidden md:flex gap-x-7 justify-center items-center font-poppins text-[17px] font-medium tracking-[0.01em]">
               <li>

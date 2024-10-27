@@ -15,7 +15,7 @@ const RestaurantMenu = ({ menuItems, loading, error, restaurantId }) => {
   }, [])
 
   if (loading) {
-    return <p className="text-center">Loading menu items...</p>;
+    return <p className="text-center">Loading Products...</p>;
   }
 
   if (error) {
@@ -23,7 +23,7 @@ const RestaurantMenu = ({ menuItems, loading, error, restaurantId }) => {
   }
 
   if (menuItems.length === 0) {
-    return <p className="text-gray-700 text-center italic">No menu items available.</p>;
+    return <p className="text-gray-700 text-center italic">No Product available.</p>;
   }
 
   return (

@@ -97,7 +97,7 @@ const UsersRestaurantDetail = ({ restaurant, onClose }) => {
                   }`}
                   onClick={() => setActiveTab('menu')}
                 >
-                  Menu
+                  Products
                 </button>
               </div>
 

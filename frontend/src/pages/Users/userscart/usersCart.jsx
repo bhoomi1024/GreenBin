@@ -133,8 +133,8 @@ const UsersCart = () => {
         key: "rzp_test_Jp05EcVr7cQRf3", // Enter the Key ID generated from the Dashboard
         amount: orderAmount * 100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
         currency: "INR",
-        name: "Foodiebuddy",
-        description: "Food delivery website",
+        name: "GreenBin",
+        description: "EcoArtisans Hub ecommerce website",
         order_id: orderId, // This is a sample Order ID. Pass the id obtained in the response of Step 1
         handler: async function (response) {
           const paymentData = {

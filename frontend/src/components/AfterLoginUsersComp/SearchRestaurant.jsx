@@ -6,7 +6,7 @@ const SearchRestaurant = ({ searchTerm, handleSearch }) => {
     <div className="relative flex-grow">
       <input
         className="w-full px-3 py-2 border border-gray-300 rounded-full text-lg outline-none transition-border duration-300 focus:border-green-500 focus:shadow-outline placeholder-gray-400"
-        placeholder='Search for restaurants'
+        placeholder='Search for EcoArtisans Hub'
         type='text'
         value={searchTerm}
         onChange={handleSearch}

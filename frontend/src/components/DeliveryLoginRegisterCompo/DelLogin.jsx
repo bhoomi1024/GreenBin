@@ -3,6 +3,7 @@ import { SiGreasyfork } from "react-icons/si";
 import { Link, useNavigate } from "react-router-dom";
 import Axios from "axios";
 import Footer from "../HomePageCompo/Footer";
+import logo from "../../assets/logo.png";
 
 const DelLogin = () => {
   const navigate = useNavigate();
@@ -64,14 +65,11 @@ const DelLogin = () => {
         } top-0`}
       >
         <div className="p-5 flex justify-between items-center">
-          <div className="flex items-center">
+        <div className="flex justify-center items-center ml-12">
+            <img src={logo} alt="Logo" className="h-10 w-10 mr-3" /> {/* Logo image */}
             <h1 className="font-poppins md:text-3xl font-extrabold tracking-wide flex">
-              <span className="text-yellow-400 flex justify-center items-center">
-                <span>fo</span>
-                <SiGreasyfork className="rotate-90 mt-1 mr-[1px]" size={20} />
-                <span>die</span>
-              </span>
-              <span>Buddy</span>
+              <span className="text-green-600">Green</span>
+              <span className="text-black">Bin</span>
             </h1>
           </div>
           <nav className="flex gap-x-7 items-center">

@@ -62,7 +62,7 @@ const RestaurantCard = ({ restaurant,  onLike, onClick }) => {
     >
       <div className="relative">
         <img
-          src={"https://res.cloudinary.com/ddyejtuqb/image/upload/v1719814366/resss_mqx2vx.jpg"}
+          src={"https://hips.hearstapps.com/hmg-prod/images/ghk090123goodstuff-001-655c0f419de10.jpg?crop=1xw:1xh;center,top&resize=980:*"}
           alt={restaurant.restaurantName}
           className="w-full h-48 object-cover rounded-lg mb-5"
         />
