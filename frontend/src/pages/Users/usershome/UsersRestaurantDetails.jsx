@@ -69,7 +69,7 @@ const UsersRestaurantDetail = ({ restaurant, onClose }) => {
               <div className="text-center mb-8">
                 <h1 className="text-4xl font-extrabold mb-2 text-gray-800">{restaurant.name}</h1>
                 <div className="text-xl text-gray-600 mb-4">
-                  {cuisineNames.length > 0 ? cuisineNames.join(', ') : 'No cuisine available'}
+                  {cuisineNames.length > 0 ? cuisineNames.join(', ') : 'No creation type available'}
                 </div>
                 <div className="flex items-center justify-center mb-4">
                   <span className="text-yellow-400 mr-2">

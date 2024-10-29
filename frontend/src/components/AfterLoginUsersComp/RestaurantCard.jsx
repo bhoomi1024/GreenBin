@@ -82,7 +82,7 @@ const RestaurantCard = ({ restaurant,  onLike, onClick }) => {
         </p>
       </div>
 
-      <p className="text-gray-600 mb-2">  {cuisineNames.length > 0 ? cuisineNames.join(', ') : 'No cuisine available'}</p>
+      <p className="text-gray-600 mb-2">  {cuisineNames.length > 0 ? cuisineNames.join(', ') : 'No creation type available'}</p>
       <p className="text-gray-600 mb-2">{'⭐'.repeat(restaurant.rating)}</p>
     </div>
   );
