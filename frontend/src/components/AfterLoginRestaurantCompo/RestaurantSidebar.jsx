@@ -29,7 +29,7 @@ const RestaurantSidebar = () => {
   const sideMenu = [
     { title: 'Dashboard', icon: <SpaceDashboardIcon sx={{ fontSize: 30 }} />, path: '/RestaurantLayout/ResDashBoard' },
     { title: 'Eco Orders', icon: <ShoppingBagIcon sx={{ fontSize: 30 }} />, path: '/RestaurantLayout/ResOrders' },
-    { title: 'Trash2Treasure ', icon: <RecyclingIcon  sx={{ fontSize: 30 }} />, path: '/RestaurantLayout/ogMain' },
+    { title: 'Trash2Treasure ', icon: <RecyclingIcon  sx={{ fontSize: 30 }} />, path: '/RestaurantLayout/OgMain' },
     { title: 'Upcycle Creation', icon: <CreateIcon sx={{ fontSize: 29 }} />, path: '/RestaurantLayout/ResMenu' },
     { title: 'Nearby waste', icon: <LocationOnIcon sx={{ fontSize: 30 }} />, path: '/RestaurantLayout/NearByWaste' }, // Updated icon
     { title: 'Details', icon: <InfoIcon sx={{ fontSize: 30 }} />, path: '/RestaurantLayout/ResDetails' },
