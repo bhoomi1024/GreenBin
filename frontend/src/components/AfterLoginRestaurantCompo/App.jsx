@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { generatingResult } from "../../../../backend/api/testing";
-import "../AfterLoginRestaurantCompo/App.css";
+// import "./App.css";
 
 const videoLinks = {
   "plastic bottles": "https://www.youtube.com/embed/QaIjcTdO2Ys?si=j-PAfVXYauLsRgcq",
@@ -11,9 +11,8 @@ const videoLinks = {
 
 const DIYInstructionsDisplay = ({ response }) => {
   const lines = response?.split('/').filter(line => line.trim() !== '') || [];
-  const category = lines[1]?.toLowerCase() || ""; // Get category from response
+  const category = lines[1]?.toLowerCase() || "";
 
-  // Find which category key contains our category text
   const videoKey = Object.keys(videoLinks).find(key => 
     category.includes(key.toLowerCase())
   );
@@ -130,10 +129,10 @@ Final Result: Your [item] is now transformed into a [new purpose]. Here's how to
   };
 
   return (
-    <div className="container">
-      <div className="upload-card">
-        <div className="card-header">
-          <h2>Upload Recyclable Item Image</h2>
+    <div className="flex justify-center items-center bg-gray-100 px-4">
+      <div className="upload-card bg-white rounded-lg shadow-lg p-4 w-full max-w-md">
+        <div className="card-header mb-3">
+          <h2 className="text-2xl font-bold text-center">Upload Recyclable Item Image</h2>
         </div>
         <div className="card-content">
           <form onSubmit={handleSubmit}>
@@ -143,14 +142,15 @@ Final Result: Your [item] is now transformed into a [new purpose]. Here's how to
                 accept="image/*"
                 onChange={handleImageChange}
                 required
-                className="file-input"
+                className="file-input mb-3 block w-full text-sm text-gray-900 border rounded-lg cursor-pointer"
               />
               
               {imagePreview && (
-                <div className="image-preview">
+                <div className="image-preview mb-3">
                   <img 
                     src={imagePreview} 
                     alt="Preview" 
+                    className="mx-auto w-48 h-auto"
                   />
                 </div>
               )}
@@ -158,7 +158,7 @@ Final Result: Your [item] is now transformed into a [new purpose]. Here's how to
               <button 
                 type="submit" 
                 disabled={!selectedImage || loading}
-                className={`submit-button ${loading ? 'loading' : ''}`}
+                className={`submit-button w-full bg-green-500 text-white py-2 rounded-lg transition duration-200 ${loading ? 'opacity-50 cursor-not-allowed' : ''}`}
               >
                 {loading ? "Processing..." : "Get DIY Ideas"}
               </button>

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ShoppingBag, LogOut, UserRound, ShoppingCart, ChevronDown } from 'lucide-react';
-import { SiGreasyfork } from 'react-icons/si';
+import { ShoppingBag, LogOut, UserRound, ShoppingCart, ChevronDown, Eye } from 'lucide-react'; // Import Eye icon
 import axios from 'axios';
 import { useSelector } from 'react-redux';
 import logo from "../../assets/logo.png";
@@ -27,7 +26,7 @@ const Navbar = ({ likedCount }) => {
         throw new Error(`HTTP error! Status: ${res.status}`);
       }
 
-      const textData = await res.text(); // Get response as text
+      const textData = await res.text();
       console.log("Response text:", textData);
 
       if (!textData) {
@@ -35,7 +34,7 @@ const Navbar = ({ likedCount }) => {
       }
 
       try {
-        const data = JSON.parse(textData); // Manually parse JSON
+        const data = JSON.parse(textData);
         console.log(data);
         localStorage.setItem('userId', data._id);
         console.log(data._id);
@@ -73,17 +72,15 @@ const Navbar = ({ likedCount }) => {
         <div className="flex justify-between items-center h-full">
           {/* Left side - Title */}
           <div className="flex-shrink-0 flex items-center">
-            <div className="flex justify-center items-center">
-              <Link to="/UsersRestaurant" className="flex items-center">
+            <Link to="/UsersRestaurant" className="flex items-center">
               <div className="flex justify-center items-center ml-12">
-            <img src={logo} alt="Logo" className="h-10 w-10 mr-3" /> {/* Logo image */}
-            <h1 className="font-poppins md:text-3xl font-extrabold tracking-wide flex">
-              <span className="text-green-600">Green</span>
-              <span className="text-black">Bin</span>
-            </h1>
-          </div>
-              </Link>
-            </div>
+                <img src={logo} alt="Logo" className="h-10 w-10 mr-3" />
+                <h1 className="font-poppins md:text-3xl font-extrabold tracking-wide flex">
+                  <span className="text-green-600">Green</span>
+                  <span className="text-black">Bin</span>
+                </h1>
+              </div>
+            </Link>
           </div>
 
           {/* Center - Navigation Links */}
@@ -102,16 +99,13 @@ const Navbar = ({ likedCount }) => {
                   )}
                 </button>
               </Link>
-              {/* <Link to="/Usersliked">
-                <button className="ml-3 p-1 relative">
-                  <Heart className="h-6 w-6" />
-                  {likedCount > 0 && (
-                    <span className="absolute -top-3 -right-2 bg-red-400 text-white rounded-full px-2  text-sm font-bold">
-                      {likedCount}
-                    </span>
-                  )}
-                </button>
-              </Link> */}
+
+              {/* Self-awareness button */}
+              <Link to="/Usersawareness">
+              <button className="ml-3 p-1 flex items-center bg-green-500 text-white rounded-full hover:bg-green-600 transition duration-200">
+                <Eye className="h-6 w-6" />
+              </button>
+</Link>
               <div className="relative group flex items-center">
                 <button className="ml-3 p-1 flex items-center">
                   <UserRound className="h-6 w-6" />

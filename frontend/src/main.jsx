@@ -45,12 +45,15 @@ import DelSupport from "./components/AfterLoginDeliveryPartnersCompo/DelSupport.
 
 import UsersRestaurant from "./pages/Users/usershome/UsersRestaurant.jsx"
 import Usersliked from "./pages/Users/liked/Usersliked.jsx";
+import Usersawareness from "./pages/Users/awareness/Usersawareness.jsx";
 import Usersorders from "./pages/Users/usersOrders/Usersorders.jsx";
 import UsersCart from "./pages/Users/userscart/usersCart.jsx";
+import SustainabilityQuiz from "./pages/Users/quizes/SustainabilityQuiz.jsx";
 import ResOrders from "./pages/restaurant/ResOrders.jsx";
 import { Provider as ReduxProvider } from "react-redux";
 import { PersistGate } from 'redux-persist/integration/react';
 import store, { persistor } from "./redux/store.js";
+import WasteSorting from "./pages/Users/quizes/WasteSorting.jsx";
 
 
 const router = createBrowserRouter(
@@ -89,7 +92,9 @@ const router = createBrowserRouter(
       <Route path="/Usersliked" element={<Usersliked />} />
       <Route path="/UsersOrders" element={<Usersorders />} />
       <Route path="/UsersCart" element={<UsersCart />} />
-
+      <Route path="/Usersawareness" element={<Usersawareness />} />
+<Route path="/SustainabilityQuiz" element={<SustainabilityQuiz />} />
+<Route path="/WasteSorting" element={<WasteSorting />} />
 
 
       <Route path="RestaurantLayout" element={<RestaurantLayout />}>

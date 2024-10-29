@@ -1,0 +1,55 @@
+{
+    "questions": [
+      {
+        "question": "What type of waste is this?",
+        "image": "https://media.istockphoto.com/id/1442904386/photo/devestating-shot-of-plastic-waste-in-the-ocean-water-pollution.jpg?s=612x612&w=0&k=20&c=g3IioLf8XdzYsadrumaLZP8H2YkTqXVA4Mj2KCktrtQ=",
+        "options": [
+          { "text": "Organic Waste", "isCorrect": true },
+          { "text": "Plastic Waste", "isCorrect": false },
+          { "text": "Metal Waste", "isCorrect": false },
+          { "text": "Glass Waste", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Which bin should you use for this?",
+        "image": "https://media.istockphoto.com/id/1457957754/photo/building-project-waste.webp?a=1&b=1&s=612x612&w=0&k=20&c=08PrHD3xezwznwKsP4sOo5axv3YJRqcR8zf6LBLDy_E=",
+        "options": [
+          { "text": "Recyclable Bin", "isCorrect": true },
+          { "text": "General Waste Bin", "isCorrect": false },
+          { "text": "Hazardous Waste Bin", "isCorrect": false },
+          { "text": "Compost Bin", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Identify this waste material.",
+        "image": "https://images.unsplash.com/photo-1621496654772-c66c48290259?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHdhc3RlfGVufDB8fDB8fHww",
+        "options": [
+          { "text": "Paper Waste", "isCorrect": true },
+          { "text": "Electronic Waste", "isCorrect": false },
+          { "text": "Textile Waste", "isCorrect": false },
+          { "text": "Wood Waste", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Where does this belong?",
+        "image": "https://media.istockphoto.com/id/2065996489/photo/plastic-resin-pellets-in-holding-hands.webp?a=1&b=1&s=612x612&w=0&k=20&c=vxgU6ryJJNM0Sot0_qv64yPJPv1M95ntqn4qV2LywD0=",
+        "options": [
+          { "text": "Organic Waste", "isCorrect": false },
+          { "text": "Plastic Waste", "isCorrect": true },
+          { "text": "Metal Waste", "isCorrect": false },
+          { "text": "Glass Waste", "isCorrect": false }
+        ]
+      },
+      {
+        "question": "Classify this item.",
+        "image": "https://media.istockphoto.com/id/1714901446/photo/seagulls-at-a-garbage-dump-with-a-city-in-background-environmental-damage-air-and-water.webp?a=1&b=1&s=612x612&w=0&k=20&c=wyUIyj4OKsTkc-aDp8_WdeUthmXZJeJRKNgasp6U7p8=",
+        "options": [
+          { "text": "Recyclable Bin", "isCorrect": false },
+          { "text": "Compost Bin", "isCorrect": false },
+          { "text": "Hazardous Waste Bin", "isCorrect": true },
+          { "text": "General Waste Bin", "isCorrect": false }
+        ]
+      }
+    ]
+  }
+  

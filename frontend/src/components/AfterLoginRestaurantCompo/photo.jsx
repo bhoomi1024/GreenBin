@@ -34,22 +34,45 @@ function CameraCapture() {
   };
 
   return (
-    <div style={{ textAlign: 'center' }}>
-      <h2>Camera Capture</h2>
+    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
+      <h1 className="text-2xl mb-4">Camera Capture</h1>
+      {!photo ? (
+        <video ref={videoRef} autoPlay className="mb-4 border border-gray-400 rounded" />
+      ) : (
+        <img src={photo} alt="Captured" className="mb-4 border border-gray-400 rounded" />
+      )}
+      <canvas ref={canvasRef} className="hidden"></canvas>
       {!photo ? (
         <>
-          <video ref={videoRef} autoPlay style={{ width: '100%', maxWidth: '500px' }} />
-          <button onClick={startCamera}>Start Camera</button>
-          <button onClick={takePhoto}>Capture Photo</button>
+          <button
+            onClick={startCamera}
+            className="bg-blue-500 text-white font-bold py-2 px-4 rounded mb-2 hover:bg-blue-600 transition"
+          >
+            Start Camera
+          </button>
+          <button
+            onClick={takePhoto}
+            className="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 transition"
+          >
+            Capture Photo
+          </button>
         </>
       ) : (
         <>
-          <img src={photo} alt="Captured" style={{ width: '100%', maxWidth: '500px' }} />
-          <button onClick={downloadPhoto}>Download Photo</button>
-          <button onClick={() => setPhoto(null)}>Retake Photo</button>
+          <button
+            onClick={downloadPhoto}
+            className="bg-green-800 text-white font-bold py-2 px-4 rounded mb-2 hover:bg-green-700 transition"
+          >
+            Download Photo
+          </button>
+          <button
+            onClick={() => setPhoto(null)}
+            className="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-600 transition"
+          >
+            Retake Photo
+          </button>
         </>
       )}
-      <canvas ref={canvasRef} style={{ display: 'none' }}></canvas>
     </div>
   );
 }
