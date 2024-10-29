@@ -40,7 +40,7 @@ const Usersliked = () => {
       <div className="px-5 mb-10">
         <h2 className="text-2xl font-bold mb-5 pt-10">Liked Restaurants</h2>
         {Object.keys(likedRestaurants).length === 0 ? (
-          <p>No liked restaurants yet.</p>
+          <p></p>
         ) : (
           <div className="space-y-3">
             {Object.entries(likedRestaurants).map(([id, liked]) => {
