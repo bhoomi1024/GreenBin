@@ -20,6 +20,8 @@ import ResMenu from "./pages/restaurant/ResMenu.jsx";
 import ResDashBoard from "./pages/restaurant/ResDashboard.jsx";
 import RestaurantLayout from "./pages/restaurant/RestaurantLayout.jsx";
 import ResDetails from "./pages/restaurant/ResDetails.jsx";
+import NearByWaste from "./pages/restaurant/NearByWaste.jsx";
+import ogMain from "./pages/restaurant/ogMain.jsx"
 
 import UserLoginRegister from './pages/home/UserLoginRegister.jsx'
 import UserForgotPasswordDialog from "./components/UserLoginRegisterCompo/UserForgotPasswordDialog.jsx";
@@ -95,6 +97,9 @@ const router = createBrowserRouter(
         <Route path="ResOrders" element={<ResOrders />} />
         <Route path="ResDetails" element={<ResDetails />} />
         <Route path="ResMenu" element={< ResMenu />} />
+        <Route path="NearByWaste" element={<NearByWaste/>}/>
+        <Route path="ogMain" element={<ogMain/>}/>
+
       </Route>
       {/* <Route path="ResLogin" element */}
     </Route>
