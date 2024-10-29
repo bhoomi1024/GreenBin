@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import { generatingResult } from "../../../../backend/api/testing";
 import "../AfterLoginRestaurantCompo/App.css";
