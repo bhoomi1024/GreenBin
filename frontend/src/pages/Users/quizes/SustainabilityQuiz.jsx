@@ -131,7 +131,7 @@ const SustainabilityQuiz = () => {
               </div>
             ) : (
               Object.keys(likedRestaurants).length === 0 ? (
-                <p>No liked restaurants yet.</p>
+                <p></p>
               ) : (
                 <div className="space-y-3">
                   {Object.entries(likedRestaurants).map(([id, liked]) => {

@@ -58,7 +58,7 @@ const Usersawareness = () => {
 
         <div className="mt-8">
           {Object.keys(likedRestaurants).length === 0 ? (
-            <p className="text-gray-600">No liked restaurants yet.</p>
+            <p className="text-gray-600"></p>
           ) : (
             <div className="space-y-4">
               {Object.entries(likedRestaurants).map(([id, liked]) => {
