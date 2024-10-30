@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { generatingResult } from "../../../../backend/api/testing";
-// import "./App.css";
+import "./App.css";
 
 const videoLinks = {
   "plastic bottles": "https://www.youtube.com/embed/QaIjcTdO2Ys?si=j-PAfVXYauLsRgcq",
@@ -20,10 +20,10 @@ const DIYInstructionsDisplay = ({ response }) => {
   const videoUrl = videoLinks[videoKey] || videoLinks["other plastic waste"];
 
   return (
-    <div className="diy-container">
-      <div className="diy-card">
-        <div className="diy-header">
-          <h2>DIY Recycling Project</h2>
+    <div className="  diy-container">
+      <div className=" diy-card">
+        <div className="diy-header ">
+          <h2 className="pl-[120px]">DIY Recycling Project</h2>
         </div>
         <div className="diy-content">
           {lines.map((line, index) => {
@@ -129,8 +129,8 @@ Final Result: Your [item] is now transformed into a [new purpose]. Here's how to
   };
 
   return (
-    <div className="flex justify-center items-center bg-gray-100 px-4">
-      <div className="upload-card bg-white rounded-lg shadow-lg p-4 w-full max-w-md">
+    <div className=" justify-center items-center  px-4">
+      <div className="upload-card  p-4 w-full max-w-md">
         <div className="card-header mb-3">
           <h2 className="text-2xl font-bold text-center">Upload Recyclable Item Image</h2>
         </div>

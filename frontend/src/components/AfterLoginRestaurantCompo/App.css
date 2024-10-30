@@ -24,12 +24,14 @@
 .card-header, .diy-header {
   padding: 16px;
   border-bottom: 1px solid #e0e0e0;
+  align-items: center;
 }
 
 .card-header h2, .diy-header h2 {
   margin: 0;
   font-size: 24px;
   font-weight: bold;
+  
 }
 
 .card-content, .diy-content {

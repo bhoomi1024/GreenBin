@@ -34,8 +34,8 @@ function CameraCapture() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-      <h1 className="text-2xl mb-4">Camera Capture</h1>
+    <div className="flex flex-col items-center justify-center h-auto w-[440px]  ">
+      <h1 className="font-bold text-2xl mb-4 mt-16">Camera Capture</h1>
       {!photo ? (
         <video ref={videoRef} autoPlay className="mb-4 border border-gray-400 rounded" />
       ) : (
@@ -43,7 +43,8 @@ function CameraCapture() {
       )}
       <canvas ref={canvasRef} className="hidden"></canvas>
       {!photo ? (
-        <>
+        <div className='flex gap-[30px]'>
+
           <button
             onClick={startCamera}
             className="bg-blue-500 text-white font-bold py-2 px-4 rounded mb-2 hover:bg-blue-600 transition"
@@ -52,11 +53,11 @@ function CameraCapture() {
           </button>
           <button
             onClick={takePhoto}
-            className="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 transition"
+            className="bg-green-500 text-white font-bold py-2 px-4 mb-2 rounded hover:bg-green-600 transition"
           >
             Capture Photo
           </button>
-        </>
+        </div>
       ) : (
         <>
           <button
