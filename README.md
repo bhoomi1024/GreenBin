@@ -27,7 +27,7 @@ https://drive.google.com/file/d/19BP85O5LA7DvId2cqABIZikRFoMX5roC/view?usp=drive
 
 --- 
 
-![Description of Image](/home/bhoomi/Desktop/GreenBin/frontend/src/assets/front.png)
+![GreenBin Demo](frontend/src/assets/front.png)
 
 
 ### 🌿 Empowering Change Through Knowledge, Action, and Advocacy:
